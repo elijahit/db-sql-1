@@ -28,13 +28,13 @@ and `hour` > "14:00:00";
 # Esercizio 6: Selezionare tutti i corsi di laurea magistrale
 select *
 from degrees d 
-where name like "%Magistrale%";
+where level = "magistrale";
 
 # Esercizio 7: Da quanti dipartimenti è composta l'università?
 select count(*) as "Dipartimenti" 
 from departments d;
 
 #Esercizio 8: Quanti sono gli insegnanti che non hanno un numero di telefono?
-select count(*) as "Insegnati senza numero"
+select *
 from teachers t 
 where isnull(phone);
