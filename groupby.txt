@@ -1,0 +1,19 @@
+#Esercizio 1: Group by
+select count(*) as "Studenti", year(enrolment_date) as "Anno"
+from students s 
+group by year(enrolment_date);
+
+#Esercizio 2: Group by
+select count(*) as "Insegnanti", office_address as "Ufficio"
+from teachers t 
+group by office_address;
+
+#Esercizio 3: Group by
+select exam_id as "Appello", AVG(vote) as "Media voto"
+from exam_student es 
+group by exam_id;
+
+# Esercizio 4: Group by
+select department_id as "Dipartimenti", count(*) as "Corsi TOTALI"
+from degrees d 
+group by department_id;
